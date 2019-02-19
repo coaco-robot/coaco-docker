@@ -5,7 +5,7 @@ RUN apt update -y && apt full-upgrade -y
 RUN apt install -y ros-kinetic-desktop-full=1.3.2-0*
 
 # Install offline Robot Simulators
-RUN apt install -y mpg123 python python-pip python3 python3-pip python-virtualenv
+RUN apt install -y vim mpg123 python python-pip python3 python3-pip python-virtualenv
 
 # Setup the folder containing the catkin workspace
 RUN mkdir -p ~/catkin_ws/src
