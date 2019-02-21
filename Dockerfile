@@ -12,7 +12,7 @@ RUN apt install -y vim iputils-ping net-tools wget
 
 # Setup the folder containing the catkin workspace
 RUN mkdir -p ~/catkin_ws/src
-RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd ~/catkin_ws; catkin_make; source ./devel/setup.bash'
+RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd ~/catkin_ws; catkin_make; source ~/catkin_ws/devel/setup.bash'
 
 # Python packages
 RUN pip3 install --upgrade pip setuptools
